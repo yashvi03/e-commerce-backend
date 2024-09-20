@@ -25,7 +25,7 @@ mongoose
     console.log(error);
   });
 app.use(express.json());
-app.use(cors({ origin: 'https://your-netlify-site.netlify.app' }));
+app.use(cors({ origin: 'https://bookstop-e-commerce.netlify.app/' }));
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
 app.get('/', (req, res) => {
